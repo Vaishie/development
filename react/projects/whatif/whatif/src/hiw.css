@@ -1,0 +1,114 @@
+.howItWorks-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+
+.howItWorks-title {
+  font-weight: 750;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+.steps-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 130px;
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-container img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* Background colors for each icon container */
+.icon1 {
+  background-color: #a3e3f9; /* light blue */
+}
+
+.icon2 {
+  background-color: #b9f2bb; /* light green */
+}
+
+.icon3 {
+  background-color: #f9d8a3; /* light orange */
+}
+
+.icon4 {
+  background-color: #edb9f5; /* light purple */
+}
+
+.step-text-bold {
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: white;
+}
+
+.arrow {
+  width: 40px;
+  height: auto;
+  margin: 10px 0px;
+  user-select: none;
+}
+
+.howItWorks-button {
+  background-color: #93bbdb;
+  color: #0f2138;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;  /* centers the button horizontally */
+}
+
+.howItWorks-button:hover {
+  background-color: #7aa0c6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .steps-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .arrow {
+    display: none;
+  }
+  .step {
+    max-width: none;
+  }
+}

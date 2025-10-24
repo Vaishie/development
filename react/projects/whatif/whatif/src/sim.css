@@ -1,0 +1,174 @@
+.popular-simulations {
+  	align-self: stretch;
+  	position: relative;
+}
+.neon-glow-tokyos-vibrant-nig {
+  	align-self: stretch;
+  	position: relative;
+  	border-radius: 16px 16px 0px 0px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 222px;
+  	flex-shrink: 0;
+  	object-fit: cover;
+}
+.what-if-i {
+  	align-self: stretch;
+  	position: relative;
+  	line-height: 30px;
+  	font-weight: 600;
+  	display: inline-block;
+  	height: 57px;
+  	flex-shrink: 0;
+}
+.cost-of-living {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 20px;
+}
+.button1 {
+  	position: relative;
+  	text-decoration: underline;
+  	letter-spacing: 0.03em;
+  	line-height: 100%;
+}
+.button {
+  	border-radius: 12px;
+  	height: 32px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 24px;
+  	color: rgba(7, 17, 38, 0.4);
+}
+.simulations-info {
+  	align-self: stretch;
+  	border-radius: 0px 0px 16px 16px;
+  	background-color: rgba(152, 193, 217, 0.9);
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-end;
+  	padding: 16px 24px 24px;
+  	gap: 14px;
+}
+.popular-simulation {
+  	width: 376px;
+  	box-shadow: 10px 18px 47px rgba(0, 0, 0, 0.5);
+  	border-radius: 16px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+}
+.popular-simulation5 {
+  	width: 376px;
+  	box-shadow: 10px 18px 47px rgba(0, 0, 0, 0.5);
+  	border-radius: 16px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-end;
+}
+.button13 {
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 100%;
+  	font-weight: 500;
+}
+.button12 {
+  	border-radius: 16px;
+  	background-color: #98c1d9;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 35px;
+  	font-size: 24px;
+}
+.i {
+  	width: 28px;
+  	position: relative;
+  	letter-spacing: -0.02em;
+  	display: inline-block;
+  	height: 27px;
+  	flex-shrink: 0;
+}
+.go-confidently-in {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 28px;
+  	letter-spacing: -0.02em;
+  	text-align: left;
+}
+.henry-david-thoreau {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 20px;
+  	letter-spacing: 0.02em;
+  	line-height: 100%;
+  	font-weight: 800;
+  	font-family: Inter;
+  	color: rgba(7, 17, 38, 0.4);
+  	white-space: pre-wrap;
+}
+.quote {
+  	width: 976px;
+  	box-shadow: 6px 14px 50px rgba(152, 193, 217, 0.25);
+  	backdrop-filter: blur(40px);
+  	border-radius: 16px;
+  	background-color: rgba(152, 193, 217, 0.7);
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 32px 50px;
+  	box-sizing: border-box;
+  	gap: 20px;
+  	text-align: right;
+  	font-size: 54px;
+  	color: rgba(7, 17, 38, 0.7);
+  	font-family: Merriweather;
+}
+.simulations-container {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	align-content: flex-end;
+  	gap: 60px 24px;
+  	font-size: 30px;
+  	color: #071126;
+}
+.popular-simulations-parent {
+  	width: 1176px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 70px;
+}
+.simulations-section {
+  	width: 100%;
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 98px 0px;
+  	box-sizing: border-box;
+  	text-align: left;
+  	font-size: 52px;
+  	color: #fff;
+  	font-family: Inter;
+}
+

@@ -1,0 +1,68 @@
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 80px 40px;
+}
+
+.quote-box {
+  position: relative;
+  max-width: 950px;
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 16px;
+  background: rgba(152, 193, 217, 0.70);
+  box-shadow: 6px 14px 50px 0 rgba(152, 193, 217, 0.25);
+  backdrop-filter: blur(20px);
+}
+
+.align-left {
+  align-self: flex-start;
+}
+
+.align-right {
+  align-self: flex-end;
+}
+
+/* Large decorative quote mark */
+.quote-mark {
+  font-size: 50px;
+  font-family: 'Merriweather', serif;
+  color: rgba(7, 17, 38, 0.70);
+  position: absolute;
+  top: 25px;
+}
+
+.quote-left {
+  left: 20px;
+}
+
+.quote-right {
+  right: 20px;
+}
+
+/* Quote text */
+.quote-text {
+  color: rgba(7, 17, 38, 0.70);
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/* Author */
+.quote-author {
+  color: rgba(7, 17, 38, 0.40);
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0.4px;
+}

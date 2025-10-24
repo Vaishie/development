@@ -1,0 +1,29 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/background.jpg") no-repeat top center; /* Place image in public folder 
+  background-size: cover; /* makes it cover the screen 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* makes it stay when scrolling 
+  font-family: sans-serif;
+  background-size: 100% auto;
+  color:#000714;
+  font-family: 'Inter', sans-serif; */
+
+  /* 
+ */
+
+ body {
+  margin: 0;
+  padding: 0;
+  background: 
+    url('/background.jpg') no-repeat top center,
+    #000714;
+  background-size: auto; /* natural size of image */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  color: #000714;
+  font-family: 'Inter', sans-serif;
+}
