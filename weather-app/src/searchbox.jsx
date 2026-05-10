@@ -1,70 +1,59 @@
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import "./SearchBox.css";
-import {useState} from "react";
+import { useState } from "react";
 
-export default function SearchBox({updateInfo}) {
-    let [city, setCity]=useState("");
-    let [error, setError]=useState(false);
-    let API_URL="https://api.openweathermap.org/data/2.5/weather";
-    let API_KEY= "54fae8cd2255bdc9df0e2565c539333e";
-    
-    let getWeatherInfo=async()=>{
-        try {
-        let response=await fetch 
-        (`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`
-        );
-        let jsonResponse=await response.json();
-        let result={
-            city: city,
-            temp: jsonResponse.main.temp,
-            tempMin: jsonResponse.main.temp_min,
-            tempMax: jsonResponse.main.temp_max,
-            humidity: jsonResponse.main.humidity,
-            feelsLike: jsonResponse.main.feels_like,
-            weather: jsonResponse.weather[0].description,
-        };
-        console.log(result);
-        return result;
-        }catch (err){
-        throw err;
-        }
-    };
+export default function SearchBox({ onSearch }) {
+  const [city, setCity] = useState("");
+  const [error, setError] = useState(false);
 
-    let handleChange=(evt)=>{
-        setCity(evt.target.value);
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await onSearch(city);
+      setCity("");
+      setError(false);
+    } catch {
+      setError(true);
+    }
+  };
 
-    let handleSubmit=async (evt)=>{
-        try {evt.preventDefault();
-        console.log(city);
-        setCity("");
-        let newinfo= await getWeatherInfo();
-        updateInfo(newinfo);
-        } catch(err) {
-            setError(true);
-        }
-    };
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4 text-center">
 
-    return(
-        <div className="SearchBox">
-            <form onSubmit={handleSubmit}>
-                <TextField 
-                id="city" 
-                label="City Name" 
-                variant="outlined" 
-                required
-                value={city}
-                onChange={handleChange}
-                />
-                <br></br>
-                <br></br>
-                <Button
-                variant="contained" type="Submit">
-                    Search
-                </Button>
-                {error && <p style={{color:"red"}}>No such place exists</p>}
-            </form>
-        </div>
-    );
+      <input
+        type="text"
+        placeholder="Enter city..."
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+        className="
+        w-full px-5 py-3
+        rounded-2xl
+        bg-white/20
+        backdrop-blur-xl
+        border border-white/30
+        text-white placeholder-white/80
+        focus:outline-none
+        "
+      />
+
+      <button
+        type="submit"
+        className="
+        w-full py-3
+        rounded-2xl
+        bg-white/30
+        hover:bg-white/40
+        text-white font-medium
+        border border-white/40
+        transition
+        "
+      >
+        Search
+      </button>
+
+      {error && (
+        <p className="text-red-400 text-sm">
+          No such place exists
+        </p>
+      )}
+    </form>
+  );
 }
